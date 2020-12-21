@@ -628,11 +628,21 @@ function loadBranding() {
 
 //samoilov 21.12.2020 download button add function
 function add_download_button() {
-//samoilov 21.12.2020 TODO add check of published mp4 file
     var download_button=document.getElementById('download-button');
-    download_button.href=url + '/video.mp4';
+    var download_button_icon=document.getElementById('download-button-icon');
+    var check_url=url + '/video.mp4';
+    var http = new XMLHttpRequest();
+    http.open('HEAD', check_url, false);
+    http.send();
+    if (http.status != 404) {
+	      download_button_icon.classList.add('fi-download');
+        download_button.href=check_url;
+    } else {
+	      download_button_icon.classList.add('fi-x');
+	      download_button.title="MP4 is not ready!";
+	      download_button.setAttribute("onclick","alert('MP4 file is not ready yet! Reload page later!');");
+    };
 };
-
 
 function loadLogo(logo) {
   let logoURL = typeof logo !== 'undefined' ? logo : defaultLogo;
