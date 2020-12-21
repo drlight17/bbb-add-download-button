@@ -630,7 +630,7 @@ function loadBranding() {
 function add_download_button() {
 //samoilov 21.12.2020 TODO add check of published mp4 file
     var download_button=document.getElementById('download-button');
-    download_button.href=url + '/video/full.mp4';
+    download_button.href=url + '/video.mp4';
 };
 
 
