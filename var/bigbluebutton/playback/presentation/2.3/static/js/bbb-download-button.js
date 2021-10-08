@@ -36,7 +36,6 @@ const start = (async () => {
     download_button_el_icon = document.createElement('span');
     download_button_el_icon.className += "icon-videos";
 
-    console.log(document.URL.split("/")[6]);
     var check_url="/presentation/"+document.URL.split("/")[6]+"/video.mp4";
     var http = new XMLHttpRequest();
     http.open('HEAD', check_url, false);
