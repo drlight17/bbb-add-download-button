@@ -11,4 +11,5 @@ Add the following string at the end of <body> tag in ./bigbluebutton/playback/pr
 That's it.<br>
 This is compatible with BBB 2.3+ with <a href=https://docs.bigbluebutton.org/dev/dev23.html#new-player-for-recordings>the new version of presentation player</a>
 
-Tested at BBB 2.4-RC1
+Tested at BBB 2.4-RC1<br>
+For old 2.2 player see <a href=https://github.com/drlight17/bbb-add-download-button/tree/bbb-2.2-player-legacy>legacy branch</a>
