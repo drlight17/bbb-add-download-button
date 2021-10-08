@@ -1,5 +1,5 @@
 # bbb-add-download-button
-![Screenshot](https://github.com/drlight17/bbb-add-download-button/raw/bbb-2.3-player/screenshot.JPG)
+![Screenshot](https://github.com/drlight17/bbb-add-download-button/raw/bbb-2.3-player/screenshot.JPG)<br>
 Add download full presentation mp4 button to player<br>
 This created to work with https://github.com/tilmanmoser/bbb-video-download<br>
 Check location.href= parameter in source of bbb-download-button.js file and edit with your mp4 generated path.<br>
