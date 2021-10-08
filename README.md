@@ -4,9 +4,9 @@ Add download full presentation mp4 button to player<br>
 This created to work with https://github.com/tilmanmoser/bbb-video-download<br>
 Check location.href= parameter in source of bbb-download-button.js file and edit with your mp4 generated path.<br>
 Place file bbb-download-button.js to the according path<br>
-Add the following string at the end of <body> tag in ./bigbluebutton/playback/presentation/2.3/index.html:<br>
+Add the following string at the end of \<body> tag in ./bigbluebutton/playback/presentation/2.3/index.html:<br>
   
-***<script src="/playback/presentation/2.3/static/js/bbb-download-button.js"></script>***
+`<script src="/playback/presentation/2.3/static/js/bbb-download-button.js"></script>`
 
 That's it.<br>
 This is compatible with BBB 2.3+ with <a href=https://docs.bigbluebutton.org/dev/dev23.html#new-player-for-recordings>the new version of presentation player</a>
