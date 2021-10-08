@@ -42,7 +42,7 @@ const start = (async () => {
     http.open('HEAD', check_url, false);
     http.send();
     if (http.status != 404) {
-        download_button_el.setAttribute("href", "location.href='"+check_url+"';");
+        download_button_el.setAttribute("href", check_url);
     } else {
         download_button_el_icon.setAttribute("class","icon-close");
         download_button_el.setAttribute("title", "MP4 file is not ready yet! Reload page later!");
