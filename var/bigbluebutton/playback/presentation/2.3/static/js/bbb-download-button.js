@@ -25,8 +25,8 @@ const start = (async () => {
     download_button_el_wrapper = document.createElement('div');
     download_button_el_wrapper.setAttribute("class", "button-wrapper");
     download_button_el = document.createElement('a');
-    download_button_el.setAttribute("aria-label", "Download MP4 presentatioт");
-    download_button_el.setAttribute("title", "Download MP4 presentatioт");
+    download_button_el.setAttribute("aria-label", "Download MP4 presentation");
+    download_button_el.setAttribute("title", "Download MP4 presentation");
     download_button_el.setAttribute("download","video.mp4");
     download_button_el.style.cssText = 'text-decoration: none;';
     download_button_el.className += "button";
