@@ -10,6 +10,10 @@ Add the following string at the end of \<body> tag in ./bigbluebutton/playback/p
 
 That's it.<br>
 This is compatible with BBB 2.3+ with <a href=https://docs.bigbluebutton.org/dev/dev23.html#new-player-for-recordings>the new version of presentation player</a>
+It also compatible with dockerized BBB, just find bbb-docker_nginx's corresponding overlay folder with command
 
-Tested at BBB 2.4-RC1<br>
+`# docker inspect $(docker ps -qa) |  jq -r 'map([.Name, .GraphDriver.Data.MergedDir]) | .[] | "\(.[0])\t\(.[1])"'|grep nginx`
+
+and go to /www/playback <br>
+### Tested with installed BBB 2.4 and dockerized BBB 2.5
 For old 2.2 player see <a href=https://github.com/drlight17/bbb-add-download-button/tree/bbb-2.2-player-legacy>legacy branch</a>
