@@ -8,13 +8,16 @@ This created to work with `https://github.com/tilmanmoser/bbb-video-download` . 
 
 ## Place files
 
-Place files `bbb-download-button.js` and `download.png` to the according path:
+Place files `bbb-download-button.js`, `download.png` and `wait.png` to the according path:
 
-- `/var/bigbluebutton/playback/presentation/2.3/static/js/bbb-download-button.js`
-- `/var/bigbluebutton/playback/presentation/2.3/static/media/download.png`
+- Place `/var/bigbluebutton/playback/presentation/2.3/static/js/bbb-download-button.js` .
+- Place `/var/bigbluebutton/playback/presentation/2.3/static/media/download.png` .
+- Place `/var/bigbluebutton/playback/presentation/2.3/static/media/wait.png` .
 
-The `download.png` is created by **Vector Stall** and hosted in [flaticon](https://www.flaticon.com/premium-icon/play_5483888).
+### Icon credit
 
+- The `download.png` is created by **Vector Stall** and hosted in [flaticon](https://www.flaticon.com/premium-icon/play_5483888).
+- The `wait.png` is created by **IconKanan** and hosted in [flaticon](https://www.flaticon.com/premium-icon/hourglass_2901158).
 
 ## Modify **index.html**
 
