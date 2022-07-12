@@ -1,3 +1,12 @@
+var file_content;
+var check_url="/presentation/"+document.URL.split("/")[6]+"/video.mp4";
+
+Promise.all([
+  fetch(check_url).then(x => x.text())
+]).then((sampleResp) => {
+  file_content = sampleResp;
+});
+
 function _waitForElement(selector, delay = 50, tries = 10000) {
     const element = document.querySelector(selector);
     if (!window[`__${selector}`]) {
@@ -21,7 +30,8 @@ function _waitForElement(selector, delay = 50, tries = 10000) {
 };
 
 const start = (async () => {
-  const $el = await _waitForElement(".top-bar");
+    const $el = await _waitForElement(".top-bar");
+
     download_button_el_wrapper = document.createElement('div');
     download_button_el_wrapper.setAttribute("class", "button-wrapper");
     download_button_el = document.createElement('a');
@@ -36,11 +46,11 @@ const start = (async () => {
     download_button_el_icon = document.createElement('span');
     download_button_el_icon.className += "icon-videos";
 
-    var check_url="/presentation/"+document.URL.split("/")[6]+"/video.mp4";
     var http = new XMLHttpRequest();
     http.open('HEAD', check_url, false);
     http.send();
-    if (http.status != 404) {
+    //console.log(file_content);
+    if ((http.status != 404)&&(file_content[0].indexOf("PLACEHOLDER") < 0)) {
         download_button_el.setAttribute("href", check_url);
     } else {
         download_button_el_icon.setAttribute("class","icon-close");
@@ -49,5 +59,4 @@ const start = (async () => {
     }
     download_button_el.appendChild(download_button_el_icon);
     document.getElementsByClassName('left')[0].appendChild(download_button_el_wrapper);
-
 })();
