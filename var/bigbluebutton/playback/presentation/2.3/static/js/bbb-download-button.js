@@ -62,6 +62,10 @@ const $el = await _waitForElement(".top-bar");
         download_button_el.removeAttribute("onclick");
         download_button_el_icon.setAttribute("class","icon-videos");
         download_button_el.setAttribute("href", check_url);
+          
+        // Rename video.mp4 to <ID>.mp4 when downloading
+        download_button_el.setAttribute("download", document.URL.split("/")[6] + ".mp4");    
+          
         download_button_el.setAttribute("aria-label", "Download presentation. File size is "+Math.trunc(file_size/1024/1024)+" MB");
         download_button_el.setAttribute("title", "Download presentation. File size is "+Math.trunc(file_size/1024/1024)+" MB");
       }
