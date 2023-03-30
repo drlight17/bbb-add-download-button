@@ -16,3 +16,5 @@ It also compatible with dockerized BBB, just place edited index.html file to /bb
 
 ### Tested with installed BBB 2.4 and dockerized BBB 2.5
 For old 2.2 player see <a href=https://github.com/drlight17/bbb-add-download-button/tree/bbb-2.2-player-legacy>legacy branch</a>
+### Issues
+Sometimes there are [issues](https://github.com/tilmanmoser/bbb-video-download/issues/79) with bbb-video-download (post_publish hooks or dockerized bbb compatibility) and as a workaround I've created <a href=https://github.com/drlight17/bbb-video-download-manual-init>a manual init script</a> to run a scheduled task of creation mp4.
