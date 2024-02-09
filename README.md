@@ -1,3 +1,5 @@
+# This repo is archived as [tilmanmoser/bbb-video-download project](https://github.com/tilmanmoser/bbb-video-download) is unmaintened now. Use my fork of [bbb-mp4](https://github.com/drlight17/bbb-mp4) project instead as it is compatible with 2.6+ BBB versions.
+
 # bbb-add-download-button
 ![Screenshot](https://github.com/drlight17/bbb-add-download-button/raw/main/screenshot.JPG)<br>
 Add download full presentation mp4 button to player<br>
